@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksDetailsActivity2">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BooksDetailsActivity">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Title and Author -->
+            <TextView
+                android:id="@+id/tvTitleAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наслов - Автор"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic"
+                android:paddingTop="10dp"/>
+
+            <!-- Publisher -->
+            <TextView
+                android:id="@+id/tvPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Издавач:"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"/>
+
+            <!-- My Rating -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Моја оцена:"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etMyRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="5dp"
+                android:hint="Внеси оцена..."
+                android:textSize="16sp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Review -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рецензија:"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:id="@+id/etReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="Напиши тука..."
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:background="@android:drawable/edit_text"/>
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Датум:"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="10dp"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зачувај"
+                android:backgroundTint="#B68080"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

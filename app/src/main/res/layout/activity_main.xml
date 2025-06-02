@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/appbar"/>
+
+
+    <!-- Quote of the Day -->
+    <TextView
+        android:id="@+id/quote_of_the_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="“Твојата рака е ладна, а мојата врела како пламен. Колку си слепа, Настењка!”"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <!-- Our Book Recommendation -->
+    <TextView
+        android:id="@+id/book_recommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:text="Наша неделна препорака:"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/book_recommendation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:text="„Бели ноќи“ - Достоевски:, издание на Антолог"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/whitenights"
+        android:layout_gravity="center"
+        android:contentDescription="Book Image"
+        android:scaleType="fitCenter"/>
+
+
+    <!-- Explore Books Button -->
+    <Button
+        android:id="@+id/btn_explore_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Истражувај книги"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#B68080"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Explore Events Button -->
+    <Button
+        android:id="@+id/btn_explore_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Истражувај настани"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#B68080"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#B68080"
+        android:text="Одлогирај се" />
+
+</LinearLayout>

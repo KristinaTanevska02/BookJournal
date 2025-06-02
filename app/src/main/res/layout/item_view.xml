@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background">
+
+    <!-- Title and Author in One Line -->
+    <TextView
+        android:id="@+id/titleAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Наслов:"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:paddingBottom="4dp"
+        />
+
+    <!-- Publisher -->
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleAuthor"
+        android:text="Издавач:"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp" />
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisher"
+        android:text="Оценка:"
+        android:layout_marginLeft="5dp"
+        android:textSize="14sp"
+        android:paddingTop="4dp" />
+
+    <!-- Choose Button -->
+    <Button
+        android:id="@+id/btnChooseBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="#B68080"
+        android:padding="6dp"
+        android:text="Избери"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

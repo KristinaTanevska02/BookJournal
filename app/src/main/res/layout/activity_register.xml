@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+        <TextView
+            android:id="@+id/registerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="Регистрирај се"
+            android:textAlignment="center"
+            android:textColor="#B68080"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Цело име"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces" />
+        <EditText
+            android:id="@+id/registerAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Возраст"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces" />
+
+
+        <!-- Email Input -->
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:hint="Е-маил"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Лозинка"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:layout_marginTop="10dp" />
+
+        <!-- Confirm Password Input -->
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Потврди лозинка"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
+            android:layout_marginTop="10dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регистрирај се"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B68080"
+            android:layout_marginTop="20dp" />
+
+        <!-- Login Text -->
+        <TextView
+            android:id="@+id/gotologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Веќе имаш акаунт? Логирај се тука."
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp" />
+</LinearLayout>

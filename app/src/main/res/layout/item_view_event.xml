@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+
+    <!-- Driver Label -->
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Место:"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true" />
+
+
+    <!-- Date Value -->
+    <TextView
+        android:id="@+id/date"
+        android:text="Датум:"
+        android:layout_below="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/startDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:text="Дестинација:"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/buttonJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Придружи се"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#B68080"
+        android:layout_below="@+id/startDestination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/buttonJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Придружено"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8FB680"
+        android:layout_below="@+id/startDestination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

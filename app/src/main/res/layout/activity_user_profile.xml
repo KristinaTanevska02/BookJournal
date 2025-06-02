@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+    <include
+        layout="@layout/appbar"/>
+
+    <TextView
+        android:id="@+id/faved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Омилени:"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="8dp"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рецензии:"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="8dp"/>
+    <ListView
+        android:id="@+id/listView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    <TextView-->
+<!--        android:id="@+id/borrowed"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Позајмени:"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"/>-->
+<!--    <ListView-->
+<!--        android:id="@+id/listView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/myborrowed"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Мои позајмени:"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"/>-->
+<!--    <ListView-->
+<!--        android:id="@+id/listView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/eventss"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Настани:"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"/>-->
+<!--    <ListView-->
+<!--        android:id="@+id/listViewEvents"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+
+<Button
+    android:id="@+id/seeMyBooks"
+    android:text="Мои книги:"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#B68080"
+    android:layout_gravity="center"
+    />
+
+
+</LinearLayout>
